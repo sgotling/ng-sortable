@@ -19,9 +19,12 @@ app.controller('MainCtrl', function ($scope) {
   }, {
     name: 'item 7'
   }, {
-    name: 'item 8'
+    name: 'item 10'
   }]
-
+  console.log($scope.items)
+  $scope.test = function () {
+    console.log($scope.items)
+  } 
   $scope.sortableOptions = {
     containment: '#sortable-container'
   };
